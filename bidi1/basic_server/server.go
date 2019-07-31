@@ -5,7 +5,7 @@ import (
 	"io"
 	"log"
 	"net"
-	"vs_workspace/bidi1/basicpb"
+	"github.com/Ann-Geo/Microservices-using-gRPC/bidi1/basicpb"
 
 	"google.golang.org/grpc"
 )
