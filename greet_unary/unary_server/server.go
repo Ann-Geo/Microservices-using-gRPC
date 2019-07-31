@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"vs_workspace/Grpc_course/greet_unary/greetpb"
+	"github.com/Ann-Geo/Microservices-using-gRPC/greet_unary/greetpb"
 
 	"google.golang.org/grpc"
 )
