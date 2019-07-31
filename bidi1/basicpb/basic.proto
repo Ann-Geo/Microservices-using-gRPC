@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package basic;
+
+option go_package = "basicpb";
+
+message BidiGreeting {
+    string first_name = 1;
+    string last_name = 2;
+}
+
+message BidiStreamGreetRequest {
+    BidiGreeting greeting = 1;
+}
+
+message BidiGreetStreamResponse {
+    string result = 1;
+}
+
+service BidiGreetService {
+    rpc BidiStreamGreet(stream BidiStreamGreetRequest) returns (stream BidiGreetStreamResponse) {};
+}
