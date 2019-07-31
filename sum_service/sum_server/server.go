@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"vs_workspace/Grpc_course/sum_service/sumspb"
+	"github.com/Ann-Geo/Microservices-using-gRPC/sum_service/sumspb"
 
 	"google.golang.org/grpc"
 )
