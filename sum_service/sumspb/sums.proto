@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package sums;
+option go_package="sumspb";
+
+
+
+message SumRequest {
+    int64 input1 = 1;
+    int64 input2 = 2;
+}
+
+message SumResponse {
+    int64 result = 1;
+}
+
+service SumService{
+ 
+    rpc FindSum(SumRequest) returns (SumResponse) {};
+}
