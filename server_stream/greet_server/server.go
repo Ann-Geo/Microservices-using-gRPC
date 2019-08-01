@@ -6,7 +6,7 @@ import (
 	"net"
 	"strconv"
 	"time"
-	"vs_workspace/Grpc_course/server_stream/greetpb"
+	"github.com/Ann-Geo/Microservices-using-gRPC/server_stream/greetpb"
 
 	"google.golang.org/grpc"
 )
