@@ -1,0 +1,1 @@
+Client gives an integer input to server, Server decomposes the integer to prime factors and streams back to client using gRPC.
