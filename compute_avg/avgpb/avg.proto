@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package avg;
+
+option go_package = "avgpb";
+
+message InputNumber {
+    int64 number = 1;
+}
+
+
+message OutputResponse {
+    double average= 1;
+}
+
+service CalculatorService {
+    rpc ComputeAverage (stream InputNumber) returns (OutputResponse){};
+}
