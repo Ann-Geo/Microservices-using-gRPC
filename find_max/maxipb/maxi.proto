@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package maxi;
+
+option go_package = "maxipb";
+
+message InputRequest {
+    int64 number = 1;
+}
+
+message OutputResponse {
+    int64 maximum = 1;
+}
+
+service MaximService {
+    rpc FindMaximum (stream InputRequest) returns (stream OutputResponse){};
+}
