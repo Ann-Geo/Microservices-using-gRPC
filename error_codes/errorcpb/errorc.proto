@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package errorc;
+
+option go_package = "errorcpb";
+
+message SquareRootRequest {
+    float number = 1;
+}
+
+message SquareRootResponse {
+    double root = 1;
+}
+
+
+service CalculatorService {
+
+    //error handling
+    //This RPC will throw an error if the sent number is negative
+    //The error being sent is of type INVALID_ARGUMENT
+    rpc SquareRoot (SquareRootRequest) returns (SquareRootResponse) {};
+}
